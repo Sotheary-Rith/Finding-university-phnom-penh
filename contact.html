@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — UniPath KH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <nav>
+      <div class="logo">Uni<span>Path</span> KH</div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="university.html">Universities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <h1>Contact <span>Us</span></h1>
+      <p>Have a question or want to suggest a university? We'd love to hear from you.</p>
+    </section>
+
+    <!-- CONTACT BODY -->
+    <div class="contact-body">
+
+      <!-- LEFT — INFO -->
+      <aside class="contact-info">
+        <h2>Our Information</h2>
+
+        <div class="info-item">
+          <div class="info-image">
+              <a href="https://maps.google.com/?q=Phnom+Penh,+Cambodia" target="_blank" rel="noopener noreferrer">
+                <img src="images/location_logo.jpg" alt="Location logo">
+              </a>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <p>Phnom Penh, Cambodia</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-image">
+            <img src="images/email_logo.jpg" alt="Email logo">
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:viriyakosal@gmail.com">hello@unipathkh.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-image">
+            <img src="images/telegram_logo.jpg" alt="telegram logo">
+          </div>
+          <div>
+            <strong>Telegram</strong>
+            <a href="https://t.me/Viriyakosal" target="_blank" rel="noopener noreferrer">
+              <p>@unipathkh</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-image">
+            <img src="images/facebook_logo.jpg" alt="facebook logo">
+          </div>
+          <div>
+            <strong>Facebook</strong>
+            <p><a href="https://www.facebook.com/share/1CmQjyRgP5/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">facebook.com/unipathkh</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-image">
+            <img src="images/ig_logo.jpg" alt="ig logo">
+          </div>
+          <div>
+            <strong>Instagram</strong>
+            <p><a href="https://www.instagram.com/heeyayyuy__?igsh=bWNrMHI1dnBqcnI2&utm_source=qr">@unipathkh</a></p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT — FORM -->
+      <div class="contact-form-box">
+        <h2>Send Us a Message</h2>
+        <p class="form-sub">Fill in the form below and we'll get back to you as soon as possible.</p>
+
+        <form action="#" method="post">
+
+          <!-- FIELDSET 1 — Personal Info -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="e.g. Sotheary" required>
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="e.g. Rith" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="e.g. Sotheary@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 012 345 678">
+            </div>
+
+          </fieldset>
+
+          <!-- FIELDSET 2 — Message -->
+          <fieldset>
+            <legend>Your Message</legend>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic...</option>
+                <option value="question">Question about a University</option>
+                <option value="suggest">Suggest a University to Add</option>
+                <option value="scholarship">Scholarship Information</option>
+                <option value="report">Report Wrong Information</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+          </fieldset>
+
+          <!-- FIELDSET 3 — University Recommendation -->
+          <fieldset>
+            <legend>Suggest a University (Optional)</legend>
+
+            <div class="form-group">
+              <label for="uni-name">University Name</label>
+              <input type="text" id="uni-name" name="uni-name" placeholder="e.g. American University of Phnom Penh">
+            </div>
+
+            <div class="form-group">
+              <label for="uni-website">University Website</label>
+              <input type="url" id="uni-website" name="uni-website" placeholder="e.g. https://aupp.edu.kh">
+            </div>
+
+            <div class="form-group">
+              <label>How did you hear about UniPath KH?</label>
+              <div style="display:flex; flex-direction:column; gap:8px; margin-top:4px;">
+                <label style="display:flex; align-items:center; gap:12px; font-weight:400; color:#546E7A; font-size:0.9rem; cursor:pointer;">
+                  <input type="radio" name="referral" value="friend" style="width:18px; height:18px; accent: color #1e88e5;"> From a friend
+                </label>
+                <label style="display:flex; align-items:center; gap:12px; font-weight:400; color:#546E7A; font-size:0.9rem; cursor:pointer;">
+                  <input type="radio" name="referral" value="social" style="width:18px; height:18px; accent: color #1e88e5;"> Social media
+                </label>
+                <label style="display:flex; align-items:center; gap:8px; font-weight:400; color:#546E7A; font-size:0.9rem; cursor:pointer;">
+                  <input type="radio" name="referral" value="search" style="width:18px; height:18px; accent: color #1e88e5;"> Search engine
+                </label>
+                <label style="display:flex; align-items:center; gap:8px; font-weight:400; color:#546E7A; font-size:0.9rem; cursor:pointer;">
+                  <input type="radio" name="referral" value="school" style="width:18px; height:18px; accent: color #1e88e5;"> My school
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label style="display:flex; align-items:flex-start; gap:8px; font-weight:400; color:#546E7A; font-size:0.9rem; cursor:pointer;">
+                <input type="checkbox" name="subscribe" value="yes" style="width:18px; height:18px; accent: color #1e88e5;">
+                I agree to receive updates from UniPath KH
+              </label>
+            </div>
+
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Send Message →</button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+   <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Uni<span>Path</span> KH</div>
+          <p>Helping Cambodian graduates find their future, one university at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="university.html">Universities</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Universities</h4>
+          <ul>
+            <li><a href="university.html">RUPP</a></li>
+            <li><a href="university.html">ITC</a></li>
+            <li><a href="university.html">NUM</a></li>
+            <li><a href="university.html">RULE</a></li>
+            <li><a href="university.html">AUPP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/share/1CmQjyRgP5/?mibextid=wwXIfr">
+              <img src="images/facebook_logo.jpg" alt="facebook logo" > Unipath Kh</a></li>
+            <li><a href="https://t.me/Viriyakosal">
+              <img src="images/telegram_logo.jpg" alt="telegram logo" >@unipathkh</a></li>
+            <li><a href="contact.html">
+              <img src="images/location_logo.jpg" alt="location logo" > Phnom Penh, Cambodia</a></li>
+             <li><a href="mailto:viriyakosal@gmail.com">
+              <img src="images/email_logo.jpg" alt="email logo" > contact@unipathkh.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 UniPath KH · Built for Cambodian students</p>
+        <p>Find your perfect university with UniPath KH</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

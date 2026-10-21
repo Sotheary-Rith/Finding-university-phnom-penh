@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — UniPath KH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <nav>
+      <div class="logo">Uni<span>Path</span> KH</div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="university.html">Universities</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <h1>About <span>UniPath KH</span></h1>
+      <p>Learn who we are, why we built this, and the team behind the platform.</p>
+    </section>
+
+    <!-- ABOUT STORY -->
+    <section class="section">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="images/about_logo.jpg" alt="about image">
+        </div>
+        <div class="about-text">
+          <div class="section-label">Our Story</div>
+          <h2>Why We Built UniPath KH</h2>
+          <p>Every year, thousands of students graduate from high school in Cambodia with no clear idea of where to go next. They don't know what universities exist, what majors are offered, how much tuition costs, or whether scholarships are available.</p>
+          <p>Most students rely on word of mouth — which means they often miss great opportunities simply because they didn't have the information. We built UniPath KH to fix that. Our goal is simple: give every Cambodian student access to clear, organized university information so they can make the best decision for their future.</p>
+          <p>UniPath KH is a student project built for INFO 250 — Web Development I at the American University of Phnom Penh, Spring 2026.</p>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div class="section-label">What We Believe</div>
+      <h2 class="section-title">Our Core Values</h2>
+      <p class="section-sub">The principles that guide everything we build</p>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><img src='/WEB I_ Final Project/images/clarity.png'></div>
+          <h3>Clarity</h3>
+          <p>We present information in the simplest, most readable way so students can make decisions quickly.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><img src="/WEB I_ Final Project/images/accessibility.png"></div>
+          <h3>Accessibility</h3>
+          <p>Every student deserves access to quality information, regardless of background or resources.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><img src="/WEB I_ Final Project/images/accuracy.png"></div>
+          <h3>Accuracy</h3>
+          <p>We verify all university data — tuition, majors, and scholarships — before publishing.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><img src="/WEB I_ Final Project/images/Local focus.svg.png"></div>
+          <h3>Local Focus</h3>
+          <p>Built by Cambodian students, for Cambodian students — deeply rooted in the local context.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- FOOTER -->
+   <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Uni<span>Path</span> KH</div>
+          <p>Helping Cambodian graduates find their future, one university at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="university.html">Universities</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Universities</h4>
+          <ul>
+            <li><a href="university.html">RUPP</a></li>
+            <li><a href="university.html">ITC</a></li>
+            <li><a href="university.html">NUM</a></li>
+            <li><a href="university.html">RULE</a></li>
+            <li><a href="university.html">AUPP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/share/1CmQjyRgP5/?mibextid=wwXIfr">
+              <img src="images/facebook_logo.jpg" alt="facebook logo" > Unipath Kh</a></li>
+            <li><a href="https://t.me/Viriyakosal">
+              <img src="images/telegram_logo.jpg" alt="telegram logo" >@unipathkh</a></li>
+            <li><a href="contact.html">
+              <img src="images/location_logo.jpg" alt="location logo" > Phnom Penh, Cambodia</a></li>
+             <li><a href="mailto:viriyakosal@gmail.com">
+              <img src="images/email_logo.jpg" alt="email logo" > contact@unipathkh.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 UniPath KH · Built for Cambodian students</p>
+        <p>Find your perfect university with UniPath KH</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

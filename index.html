@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniPath KH — Find Your University in Cambodia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/WEB I_ Final Project/images/favicon1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <nav>
+      <div class="logo">Uni<span>Path</span> KH</div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="university.html">Universities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Find Your Perfect <span>University</span><br>in Phnom Penh</h1>
+      <div class="search-bar">
+        <input type="text" id="searchInput" onkeyup="showSuggestions()" placeholder="Search university or major...">
+        <i class="fa fa-search search-icon" onclick="selectTheFirstUni()"></i>
+        <div id="suggestionsBox" class="suggestions-box"></div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">20<span>+</span></div>
+          <div class="stat-label">Universities</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Majors Listed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">20<span>+</span></div>
+          <div class="stat-label">Scholarships</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED UNIVERSITIES SECTION -->
+    <section class="section" id="universities">
+      <div class="section-label">Browse</div>
+      <h2 class="section-title">Featured Universities</h2>
+      <p class="section-sub">Top universities in Phnom Penh — click to explore all universities</p>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Business</button>
+        <button class="filter-btn">Engineering</button>
+        <button class="filter-btn">Health</button>
+        <button class="filter-btn">Law</button>
+        <button class="filter-btn"> Scholarship</button>
+      </div>
+
+      <!-- UNIVERSITY CARDS GRID -->
+      <div class="uni-grid">
+
+        <!-- CARD 1 -->
+        <article class="uni-card">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/rupp.jpg" alt="RUPP Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Royal University of Phnom Penh</div>
+              <div class="uni-location">📍 Russian Federation Blvd, Phnom Penh</div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Economics</span>
+            <span class="tag">Law</span>
+            <span class="tag">Education</span>
+            <span class="tag">+8 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$300 – $600</span>
+            </div>
+            <a href="university.html" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="uni-card">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/Institute_of_Technology_of_Cambodia_logo.png" alt="ITC Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Institute of Technology of Cambodia</div>
+              <div class="uni-location">📍 Russian Federation Blvd, Phnom Penh</div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Civil Engineering</span>
+            <span class="tag">IT</span>
+            <span class="tag">Architecture</span>
+            <span class="tag">+4 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$400 – $800</span>
+            </div>
+            <a href="university.html" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="uni-card">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/National_University_of_Cambodia_logo.png" alt="NUM Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">National University of Management</div>
+              <div class="uni-location">📍 Preah Monivong Blvd, Phnom Penh</div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Accounting</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">+5 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$350 – $700</span>
+            </div>
+            <a href="university.html" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p style="text-align:center; margin-top:32px;">
+        <a href="university.html" style="display:inline-block; padding:12px 32px; background:#1565C0; color:white; border-radius:10px; font-weight:600; font-size:0.95rem; text-decoration:none;">
+          View All Universities →
+        </a>
+      </p>
+    </section>
+
+    <!-- VIDEO SECTION -->
+   <section class="video-section" id="video">
+  <div class="video-inner">
+    <div class="video-columns">
+
+  
+      <div class="video-col-left">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0mPF1BX0y6g?si=Roje7Saokhc6nMxQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      <div class="video-col-right">
+        <h2 class="section-title">University Life in Cambodia</h2>
+        <p class="section-sub">Watch this video to get a feel for university life in Phnom Penh</p>
+        <p> Experience what it’s like to be a student in Cambodia’s vibrant capital. 
+        From attending lectures and working on group projects to exploring cafes, 
+        meeting friends, and balancing academic life with personal growth, 
+        this video gives you a closer look at daily student life.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section" id="how">
+      <div class="how-inner">
+        <div class="section-label">Guide</div>
+        <h2 class="section-title">How UniPath KH Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Search or Browse</h3>
+            <p>Type a major or university name to find results instantly.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Compare Programs</h3>
+            <p>See majors, tuition fees, and scholarships side by side.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Visit the University</h3>
+            <p>Click View Details to go to the official university website.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <h3>Apply with Confidence</h3>
+            <p>Make your choice knowing you've seen the full picture.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Uni<span>Path</span> KH</div>
+          <p>Helping Cambodian graduates find their future, one university at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="university.html">Universities</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Universities</h4>
+          <ul>
+            <li><a href="university.html">RUPP</a></li>
+            <li><a href="university.html">ITC</a></li>
+            <li><a href="university.html">NUM</a></li>
+            <li><a href="university.html">RULE</a></li>
+            <li><a href="university.html">AUPP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/share/1CmQjyRgP5/?mibextid=wwXIfr">
+              <img src="images/facebook_logo.jpg" alt="facebook logo" > Unipath Kh</a></li>
+            <li><a href="https://t.me/Viriyakosal">
+              <img src="images/telegram_logo.jpg" alt="telegram logo" >@unipathkh</a></li>
+            <li><a href="contact.html">
+              <img src="images/location_logo.jpg" alt="location logo" > Phnom Penh, Cambodia</a></li>
+             <li><a href="mailto:viriyakosal@gmail.com">
+              <img src="images/email_logo.jpg" alt="email logo" > contact@unipathkh.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 UniPath KH · Built for Cambodian students</p>
+        <p>Find your perfect university with UniPath KH</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+    const universities = [
+      {
+        name: "Royal University of Phnom Penh",
+        majors: ["Computer Science", "Economics", "Law", "Education", "Literature"],
+        link: "university.html#rupp"
+      },
+      {
+        name: "Institute of Technology of Cambodia",
+        majors: ["Civil Engineering", "IT", "Architecture", "Mechanical Engineering"],
+        link: "university.html#itc"
+      },
+      {
+        name: "Paññāsāstra University of Cambodia",
+        majors: ["Business Admin", "Law", "Tourism", "Computer Science"],
+        link: "university.html#puc"
+      },
+      {
+        name: "National University of Management",
+        majors: ["Accounting", "Finance", "Marketing", "Banking"],
+        link: "university.html#num"
+      },
+      {
+        name: "American University of Phnom Penh",
+        majors: ["Business Admin", "Computer Science", "Liberal Arts", "Data Science"],
+        link: "university.html#aupp"
+      },
+      {
+        name: "Paragon International University",
+        majors: ["Business", "IT", "Accounting", "Architecture"],
+        link: "university.html#paragon"
+      },
+      {
+        name: "Royal University of Law and Economics",
+        majors: ["Law", "Economics", "Finance", "Management"],
+        link: "university.html#rule"
+      },
+      {
+        name: "International University",
+        majors: ["Social Sciences and Journalism", "Pharmacy", "Nursing Sciences", "Dentistry"],
+        link: "university.html#iu"
+      },
+      {
+        name: "University of Health Sciences",
+        majors: ["Dentistry", "Pharmacy", "Nursing", "Medicine"],
+        link: "university.html#uhs"
+      },
+      {
+        name: "Institute of Banking Studies",
+        majors: ["Banking", "Finance", "Accounting"],
+        link: "university.html#ibs"
+      },
+      {
+        name: "Royal University of Fine Arts",
+        majors: ["Archaeology", "Architecture and Urbanism", "Music"],
+        link: "university.html#rufa"
+      },
+      {
+        name: "CamEd Business School",
+        majors: ["Business", "Accounting", "Finance"],
+        link: "university.html#camed"
+      },
+      {
+        name: "University of Cambodia",
+        majors: ["Business", "Foreign Languages", "Media and Communication"],
+        link: "university.html#uc"
+      },
+      {
+        name: "University of Puthisastra",
+        majors: ["Dentistry", "Health Sciences & Biotechnology", "Pharmacy"],
+        link: "university.html#puthisastra"
+      },
+      {
+        name: "Cambodia Academy of Digital Technology",
+        majors: ["Computer Science", "Software Development", "Data Science"],
+        link: "university.html#cadt"
+      },
+      {
+        name: "University of Technology and Entrepreneurship",
+        majors: ["Computer Science", "Digital Marketing", "Business"],
+        link: "university.html#ute"
+      },
+      {
+        name: "De Montfort University Cambodia",
+        majors: ["Accounting and Finance", "Business and Marketing", "Computer Science"],
+        link: "university.html#dmuc"
+      },
+      {
+        name: "SETEC Institute",
+        majors: ["Database Administration", "Networking Technology", "Business Information Technology"],
+        link: "university.html#setec"
+      },
+      {
+        name: "Department of Media and Communication",
+        majors: ["Journalism", "Filming", "Graphic Design"],
+        link: "university.html#dmc"
+      },
+      {
+        name: "PSE Film School",
+        majors: ["Filmmaker", "Video Editor", "Production Management"],
+        link: "university.html#pse"
+      },
+      {
+        name: "Norton University",
+        majors: ["Social Science", "Health Science", "Arts, Humanities and Languages"],
+        link: "university.html#norton"
+      },
+      {
+        name: "National Institute of Education",
+        majors: ["Primary/Secondary School Teacher", "Education Policy Officer", "Educational Research"],
+        link: "university.html#nie"
+      },
+      {
+        name: "Royal University of Agriculture",
+        majors: ["Farm/Plantation Manager", "Food Safety Inspector", "Agronomist/Agricultural Engineer"],
+        link: "university.html#rua"
+      },
+      {
+        name: "Police Academy of Cambodia",
+        majors: ["Police Officer"],
+        link: "university.html#pac"
+      }
+    ];
+    function showSuggestions() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const box = document.getElementById("suggestionsBox");
+
+      box.innerHTML = "";
+
+      if (input === "") return;
+
+      let found = false;
+
+      universities.forEach(uni => {
+        const nameMatch = uni.name.toLowerCase().includes(input);
+
+        const majorMatch = uni.majors.some(m =>
+          m.toLowerCase().includes(input)
+        );
+
+      if (nameMatch || majorMatch) {
+        found = true;
+
+        box.innerHTML += `
+          <div class="suggestion-item" onclick="goTo('${uni.link}')">
+            <strong>${uni.name}</strong><br>
+            <small>${uni.majors.join(", ")}</small>
+          </div>
+        `;
+      }
+    });
+
+    if (!found) {
+        box.innerHTML = `<div class="no-result">No results found</div>`;
+      }
+    }
+
+    function goTo(link) {
+      window.location.href = link;
+    }
+    function selectTheFirstUni(link) {
+      const firstUni = document.querySelector(".suggestion-item");
+      if (firstUni) {
+        firstUni.click()
+      }
+      else {
+        alert("No suggestion found found")
+      }
+    }
+  </script>
+
+</body>
+</html>

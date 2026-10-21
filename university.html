@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universities — UniPath KH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <nav>
+      <div class="logo">Uni<span>Path</span> KH</div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="university.html" class="active">Universities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <h1>All <span>Universities</span></h1>
+      <p>Browse every university in Cambodia — majors, tuition, and scholarships all in one place.</p>
+    </section>
+
+    <!-- UNIVERSITIES SECTION -->
+    <section class="section">
+      <div class="section-label">Explore</div>
+      <h2 class="section-title">Universities in Phnom Penh</h2>
+      <p class="section-sub">Showing 8 universities — click View Details to visit the official website</p>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Business</button>
+        <button class="filter-btn">Engineering</button>
+        <button class="filter-btn">Health</button>
+        <button class="filter-btn">Law</button>
+        <button class="filter-btn">Arts</button>
+        <button class="filter-btn">🎓 Scholarship</button>
+      </div>
+
+      <!-- CARDS GRID -->
+      <div class="uni-grid">
+
+        <article class="uni-card" id="rupp">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/rupp.jpg" alt="RUPP Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Royal University of Phnom Penh</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/J4eo127VAQvdAU5q9">📍 Russian Federation Blvd, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Economics</span>
+            <span class="tag">Law</span>
+            <span class="tag">Education</span>
+            <span class="tag">Literature</span>
+            <span class="tag">+7 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$300 – $600</span>
+            </div>
+            <a href="https://rupp.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="itc">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/Institute_of_Technology_of_Cambodia_logo.png" alt="ITC Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Institute of Technology of Cambodia</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/xc8BMeDpicM1KKTw6">📍 Russian Federation Blvd, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Civil Engineering</span>
+            <span class="tag">IT</span>
+            <span class="tag">Architecture</span>
+            <span class="tag">Mechanical Eng.</span>
+            <span class="tag">+4 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$400 – $800</span>
+            </div>
+            <a href="https://itc.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="puc">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/PUC_Logo.png" alt="PUC Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Paññāsāstra University of Cambodia</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/HcYLBo6fMzPzdLn36">📍 Sothearos Blvd, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Business Admin</span>
+            <span class="tag">Law</span>
+            <span class="tag">Tourism</span>
+            <span class="tag">Computer Science</span>
+            <span class="tag">+6 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$700 – $1,200</span>
+            </div>
+            <a href="https://puc.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="num">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/National_University_of_Cambodia_logo.png" alt="NUM Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">National University of Management</div>
+              <div class="uni-location"> <a href="https://maps.app.goo.gl/XrdVk2QCnAzQP4f1A">📍 Preah Monivong Blvd, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Accounting</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">Banking</span>
+            <span class="tag">+5 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$350 – $700</span>
+            </div>
+            <a href="https://num.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="aupp">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/AUPP_Logo.png" alt="AUPP Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">American University of Phnom Penh</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/rZajpGHZjDTyL56J9">📍 Street 315, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Business Admin</span>
+            <span class="tag">Computer Science</span>
+            <span class="tag">Liberal Arts</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">+3 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$3,000 – $5,000</span>
+            </div>
+            <a href="https://aupp.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="paragon">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/paragon.png" alt="Paragon Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Paragon International University</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/za3uQHsGS89Px1X18">📍 Street 271, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Business</span>
+            <span class="tag">IT</span>
+            <span class="tag">Accounting</span>
+            <span class="tag">Architecture</span>
+            <span class="tag">+3 more</span>
+          </div>
+          <div class="card-footer" id="uhs">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$600 – $1,100</span>
+            </div>
+            <a href="https://paragoniu.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="rule">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/royal law.png" alt="RULE Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Royal University of Law and Economics</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/9mLmdpe2etEVVDfM8">📍 Preah Norodom Blvd, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Law</span>
+            <span class="tag">Economics</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Management</span>
+            <span class="tag">+5 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$300 – $600</span>
+            </div>
+            <a href="https://rule.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="iu">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/IU.png" alt="IU Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">International University</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/PThY8kusvf4TqGdF9">📍 HVFG+JXQ, Street 1986, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Social Sciences and Journalism</span>
+            <span class="tag">Pharmacy</span>
+            <span class="tag">Nursing Sciences</span>
+            <span class="tag">Dentistry</span>
+            <span class="tag">+5 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$3000 – $4000</span>
+            </div>
+            <a href="https://www.iu.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="uhs">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/UHS_Cambodia_logo.png" alt="UHS Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">University of Health Science</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/8MjQwvT35WNukAMy5">📍 Street 289, Phnom
+                  Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Dentist</span>
+            <span class="tag">Pharmacy</span>
+            <span class="tag">Nursing</span>
+            <span class="tag">Medicine</span>
+            <span class="tag">+4 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$1000 – $1500</span>
+            </div>
+            <a href="https://uhs.edu.kh" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+        
+        <article class="uni-card" id="ibs">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/IBS.jpg" alt="IBS Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Institute of Banking Studies</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/PFxR43VjY2AYEd3M9">📍 JV26+4X4, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Banking</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Accounting</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$500 – $750</span>
+            </div>
+            <a href="https://ibs.edu.kh/home" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="rufa">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/rufa.jpg" alt="RUFA Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Royal University of Fine Art</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/nrC7LR8kGkuBhp927">📍 JWM7+3VJ Vichet Selapak Blvd, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Archaeology</span>
+            <span class="tag">Architecture and Urbanism</span>
+            <span class="tag">Music</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$350 – $650</span>
+            </div>
+            <a href="https://rufa.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="camed">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/camed.jpg" alt="CamEd Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">CamEd Business School</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/RL89DFJDEDmjC28k9">📍 64 Street 108, Phnom Penh 120211</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Business</span>
+            <span class="tag">Accounting</span>
+            <span class="tag">Finance</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$5500 – $6900</span>
+            </div>
+            <a href="https://cam-ed.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="uc">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/uc.png" alt="UC Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">University of Cambodia</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/WC4RWcST4z4eyPWV7">📍 Northbridge St. (1019), Phnom Penh 12102</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Business</span>
+            <span class="tag">Foreign Languages</span>
+            <span class="tag">Media and Communication</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$900 – $1200</span>
+            </div>
+            <a href="https://uc.edu.kh/index.php" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+        
+        <article class="uni-card" id="puthisastra">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/puthisastra.png" alt=" Puthisastra Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">University of Puthisastra</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/EE2n1A5bW8yNLGvn9">📍 55 180 Phnom Penh, 12211</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Dentistry</span>
+            <span class="tag">Health Sciences & Biotechnology</span>
+            <span class="tag">Pharmacy</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$2700 – $3200</span>
+            </div>
+            <a href="https://www.puthisastra.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="cadt">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/CADT.png" alt=" CADT Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Cambodia Academy of Digital Technology</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/2S74FRNxTat2L7ke9">📍 2nd Bridge Prek Leap, National Road Number 6, Phnom Penh 12252</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Software Development</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$1250 – $2500</span>
+            </div>
+            <a href="https://cadt.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="ute">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/UTE (1).jpg" alt=" UTE Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">University of Technology and Entrepreneurship</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/vSQxHrujFnP7598Q6">📍 No.39A&39B Street 592, Phnom Penh 120407</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Digital Marketing</span>
+            <span class="tag">Business</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$2000 – $3800</span>
+            </div>
+            <a href="https://ute.ac/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="dmuc">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/DEMONFORD.png" alt=" DE Monfort Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">De Montfort University Cambodia</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/7spx8cMdXdo1ykRS8">📍 Diamond Business Centre Corner of La Seine and, Elite Rd, Koh Pich 120101</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Accounting and Finance</span>
+            <span class="tag">Business and Marketing</span>
+            <span class="tag">Computer Science</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$8000 – $10,000</span>
+            </div>
+            <a href="https://dmuc.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="setec">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/SETEC.png" alt=" SETEC Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">SETEC Institute</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/9F39geZmny8KoG9u6">📍 No. 86A, Street 110, Russian Federation Blvd (110), Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Database Administration</span>
+            <span class="tag">Networking Technology</span>
+            <span class="tag">Business Information Technology</span>
+            <span class="tag">+2 more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$780 – $1080</span>
+            </div>
+            <a href="https://www.setecu.com/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="dmc">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/dmc.jpg" alt=" DMC Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Department of Media and Communication</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/DSdFnNJSinuoNNPG8">📍 RUPP-CJCC Russian Federation Blvd (110), Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">journalism</span>
+            <span class="tag">Filming</span>
+            <span class="tag">Graphic Design</span>
+            <span class="tag">+ more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$1000</span>
+            </div>
+            <a href="https://dmc-cci.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="pse">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/pse.jpg" alt=" PSE Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">PSE Film School</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/oLHfEJy45bW85q8x5">📍 GVVJ+PM5, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Filmmaker</span>
+            <span class="tag">Video editor</span>
+            <span class="tag">Production Management</span>
+            <span class="tag">+ more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">N/A</span>
+            </div>
+            <a href="https://www.pse.ngo/education/pse-film-school" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="norton">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/norton.png" alt=" Norton Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Norton University</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/Zxo9Mb2Hrc5ragqV7">📍 Keo Chenda St, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Social Science</span>
+            <span class="tag">Health Science</span>
+            <span class="tag">Arts, Humanities And Languages</span>
+            <span class="tag">+ more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$320-$1500</span>
+            </div>
+            <a href="https://www.norton-u.com/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="nie">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/NIE.jpg" alt=" National Institute of Education Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">National Institute of Education </div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/ZVWLaUThXKNuJGZf9">📍HW4G+WP4, Preah Suramarit Blvd (268), Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Primiry/Secondary School Teacher</span>
+            <span class="tag">Education Policy Officer</span>
+            <span class="tag">Educational Research</span>
+            <span class="tag">+ more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$863</span>
+            </div>
+            <a href="https://nie.edu.kh/en/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="rua">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/Royal University of Agriculture.jpg" alt="Royal University of Agriculture Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Royal University of Agriculture</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/zgmDWsEQ8dzki2nu5">📍ផ្លូវសាលាចំការដូង, Phnom Penh</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Farm/Plantation Manager</span>
+            <span class="tag">Food Safety Inspector</span>
+            <span class="tag">Agronomist/Agricultural Engineer</span>
+            <span class="tag">+ more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">$370-$590</span>
+            </div>
+            <a href="https://www.rua.edu.kh/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+        <article class="uni-card" id="pac">
+          <div class="card-top">
+            <div class="uni-logo-box">
+              <img src="images/Police Academy of Cambodia.jpg" alt="Police Academy of Cambodia Logo">
+            </div>
+            <div class="uni-info">
+              <div class="uni-name">Police Academy of Cambodia</div>
+              <div class="uni-location"><a href="https://maps.app.goo.gl/Qei9HTqP9m79QtTS8">📍ភូមិស្តៅកន្លែង​ ឃុំ ដីឥដ្ឋ​ ស្រុកកៀនស្វាយ​ ខេត្តកណ្តាល ​តាមបណ្តោយ​ផ្លូវជាតិ​លេខ១​, ផ្លូវជាតិលេខ១</a></div>
+            </div>
+            <span class="scholarship-badge">🎓 Scholarship</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="majors-label">Majors Offered</div>
+          <div class="major-tags">
+            <span class="tag">Police Officer</span>
+            <span class="tag">+ more</span>
+          </div>
+          <div class="card-footer">
+            <div>
+              <span class="tuition-label">Tuition / Year</span>
+              <span class="tuition-price">N/A</span>
+            </div>
+            <a href="https://www.pac.edu.kh/en/" target="_blank" class="view-btn">View Details →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- OPENING HOURS TABLE -->
+    <section class="section" style="padding-top:0;">
+      <div class="section-label">Reference</div>
+      <h2 class="section-title">University Office Hours</h2>
+      <p class="section-sub">Enrollment and administrative office hours for each university</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>University</th>
+              <th>Monday – Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+              <th>Enrollment Period</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RUPP</td>
+              <td>7:30 AM – 5:00 PM</td>
+              <td>8:00 AM – 12:00 PM</td>
+              <td>Closed</td>
+              <td>Oct – Nov / Mar – Apr</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>ITC</td>
+              <td>7:30 AM – 5:00 PM</td>
+              <td>8:00 AM – 12:00 PM</td>
+              <td>Closed</td>
+              <td>Oct – Nov</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>PUC</td>
+              <td>8:00 AM – 5:30 PM</td>
+              <td>8:00 AM – 3:00 PM</td>
+              <td>Closed</td>
+              <td>Year-round</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>NUM</td>
+              <td>7:30 AM – 5:00 PM</td>
+              <td>8:00 AM – 12:00 PM</td>
+              <td>Closed</td>
+              <td>Oct – Nov / Mar – Apr</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>AUPP</td>
+              <td>8:00 AM – 6:00 PM</td>
+              <td>9:00 AM – 1:00 PM</td>
+              <td>Closed</td>
+              <td>Year-round</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>UHS</td>
+              <td>7:30 AM – 5:00 PM</td>
+              <td>8:00 AM – 12:00 PM</td>
+              <td>Closed</td>
+              <td>Oct – Nov</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>Paragon</td>
+              <td>8:00 AM – 5:00 PM</td>
+              <td>8:00 AM – 12:00 PM</td>
+              <td>Closed</td>
+              <td>Year-round</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>RULE</td>
+              <td>7:30 AM – 5:00 PM</td>
+              <td>8:00 AM – 12:00 PM</td>
+              <td>Closed</td>
+              <td>Oct – Nov / Mar – Apr</td>
+              <td><span class="status-open">Open</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Uni<span>Path</span> KH</div>
+          <p>Helping Cambodian graduates find their future, one university at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="university.html">Universities</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Universities</h4>
+          <ul>
+            <li><a href="university.html">RUPP</a></li>
+            <li><a href="university.html">ITC</a></li>
+            <li><a href="university.html">NUM</a></li>
+            <li><a href="university.html">RULE</a></li>
+            <li><a href="university.html">AUPP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/share/1CmQjyRgP5/?mibextid=wwXIfr">
+              <img src="images/facebook_logo.jpg" alt="facebook logo" > Unipath Kh</a></li>
+            <li><a href="https://t.me/Viriyakosal">
+              <img src="images/telegram_logo.jpg" alt="telegram logo" >@unipathkh</a></li>
+            <li><a href="contact.html">
+              <img src="images/location_logo.jpg" alt="location logo" > Phnom Penh, Cambodia</a></li>
+             <li><a href="mailto:viriyakosal@gmail.com">
+              <img src="images/email_logo.jpg" alt="email logo" > contact@unipathkh.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 UniPath KH · Built for Cambodian students</p>
+        <p>Find your perfect university with UniPath KH</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
